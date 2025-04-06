@@ -26,10 +26,10 @@ function playRound(UserChoice,ComputerChoice){
 if (UserChoice===ComputerChoice){
     result=("DRAW");
 } else if (UserChoice==="rock" && ComputerChoice==="scissors" || UserChoice==="paper" && ComputerChoice==="rock" || UserChoice==="scissors" && ComputerChoice==="paper"){
-    result=("YOU WON")
+    result=("YOU WIN")
     userScore= ++(userScore);
 } else {
-    result=("YOU LOST");
+    result=("YOU LOSE");
     computerScore= ++(computerScore);
 }}
 playRound(UserChoice,ComputerChoice);
